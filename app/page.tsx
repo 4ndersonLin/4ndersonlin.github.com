@@ -162,7 +162,7 @@ const Timeline = () => {
             key={event.id}
             id={`event-${event.id}`}
             className={`flex items-center mb-8 relative ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
-            tabIndex="0"
+            tabIndex={0}
             aria-label={`${event.title[language]} on ${event.date}`}
           >
             <div className={`w-1/2 ${index % 2 === 0 ? "pr-8" : "pl-8"}`}>
